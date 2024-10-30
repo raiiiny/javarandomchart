@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>자바! 채보 추첨기</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="java.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+	<script src="./getchart.js"></script>
+</head>
+<body>
+	<div class="header">
+		<h2>자바! 채보 추첨기</h2>
+		<div class="chart-num">
+			<label class="chart-num" for="chart-num">시도 채보 수</label>
+			<label class="chart-num-info" for="chart-num">(1~10)</label>
+			<label class="chart-num" for="chart-num">:</label>
+			<input class="chart-num" type="number" min="1" max="10" value="1" required>
+		</div>
+		<div class="mode-selection">
+			<div class="body">
+				<button class="mode-串" data-tip="#mode-串-x" data-for="T" data-mode="串" currentitem="false">串</button>
+				<button class="mode-本 active" data-tip="#mode-本-x" data-for="T" data-mode="本" currentitem="false">本</button>
+				<button class="mode-雙" data-tip="#mode-雙-x" data-for="T" data-mode="雙" currentitem="false">雙</button>
+			</div>
+		</div>
+		<div class="difficulty-bar">
+			<div class="item" data-active="false"><div class="level level-0" data-level="0">0</div></div>
+			<div class="item" data-active="false"><div class="level level-1" data-level="1">1</div></div>
+			<div class="item" data-active="false"><div class="level level-2" data-level="2">2</div></div>
+			<div class="item" data-active="false"><div class="level level-3" data-level="3">3</div></div>
+			<div class="item" data-active="false"><div class="level level-4" data-level="4">4</div></div>
+			<div class="item" data-active="false"><div class="level level-5" data-level="5">5</div></div>
+			<div class="item" data-active="false"><div class="level level-6" data-level="6">6</div></div>
+			<div class="item" data-active="false"><div class="level level-7" data-level="7">7</div></div>
+			<div class="item" data-active="false"><div class="level level-8" data-level="8">8</div></div>
+			<div class="item" data-active="false"><div class="level level-9" data-level="9">9</div></div>
+			<div class="item" data-active="false"><div class="level level-10" data-level="10">10</div></div>
+			<div class="item" data-active="false"><div class="level level-11" data-level="11">11</div></div>
+			<div class="item" data-active="false"><div class="level level-12" data-level="12">12</div></div>
+			<div class="item" data-active="false"><div class="level level-13" data-level="13">13</div></div>
+			<div class="item" data-active="false"><div class="level level-14" data-level="14">14</div></div>
+			<div class="item" data-active="false"><div class="level level-15" data-level="15">15</div></div>
+			<div class="item" data-active="false"><div class="level level-16" data-level="16">16</div></div>
+			<div class="item" data-active="false"><div class="level level-17" data-level="17">17</div></div>
+			<div class="item" data-active="false"><div class="level level-18" data-level="18">18</div></div>
+			<div class="item" data-active="false"><div class="level level-19" data-level="19">19</div></div>
+			<div class="item" data-active="false"><div class="level level-20" data-level="20">20</div></div>
+			<div class="item" data-active="false"><div class="level level-21" data-level="21">21</div></div>
+			<div class="item" data-active="false"><div class="level level-22" data-level="22">22</div></div>
+			<div class="item" data-active="false"><div class="level level-23" data-level="23">23</div></div>
+			<div class="item" data-active="false"><div class="level level-24" data-level="24">24</div></div>
+			<div class="item" data-active="false"><div class="level level-25" data-level="25">25</div></div>
+			<div class="item" data-active="false"><div class="level level-26" data-level="26">26</div></div>
+			<div class="item" data-active="false"><div class="level level-27" data-level="27">27</div></div>
+			<div class="item" data-active="false"><div class="level level-28" data-level="28">28</div></div>
+			<div class="item" data-active="true"><div class="level level-29" data-level="29">29</div></div>
+			<div class="item" data-active="false"><div class="level level-30" data-level="30">30</div></div>
+			<div class="item" data-active="false"><div class="level exponential" data-level="30+">30+</div></div>
+		</div>
+		<button class="submit">추첨 🚀</button>
+	</div>
+	<div class="charts">
+		<div class="head">
+			<div>난도</div>
+			<div>노래</div>
+			<div>제목</div>
+			<div>제작자</div>
+		</div>
+		<a data-id="1955" value="46" style="animation-delay: 800ms;">
+			<div class="level level-29" data-level="29">29</div>
+			<div>
+				<div>シャンティ<span class="desc">&nbsp;(샨티)</span></div>
+				<div class="desc">KAITO</div>
+			</div>
+			<div>
+				<span class="mode-本">本</span>&nbsp;Hard
+			</div>
+			<div class="desc">라이니<br><i class="icon fa-fw fas fa-play-circle"></i>&nbsp;3</div>
+		</a>
+	</div>
+</body>
+</html>

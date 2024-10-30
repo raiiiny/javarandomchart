@@ -1,0 +1,103 @@
+@font-face {
+    font-family: 'Main';
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/TmoneyRoundWindRegular.woff") format("woff")
+}
+@font-face {
+	font-family: 'Title';
+	src: url('font/Freesentation-1Thin.woff2') format('woff');
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Japanese';
+	src: url('font/KosugiMaru-Regular.woff2') format('woff');
+	font-style: normal;
+}
+
+* {
+	font-family: 'Main', 'Japanese';
+}
+
+body {
+	background: #050f21;
+	color: white;
+	text-align: center;
+	scroll-behavior: smooth;
+	font-weight: 200;
+	font-size: 18px;
+}
+
+.header {
+	margin-top: 60px;
+}
+
+h2 {
+	letter-spacing: 5px;
+	font-size: 24px;
+	font-family: 'Title';
+}
+
+label.chart-num {
+	margin-left: -3px;
+	margin-right: -3px;
+	font-size: 1.5em;
+	letter-spacing: 0.2px;
+	font-family: 'Title';
+	font-weight: bold;
+}
+
+label.chart-num-info{
+	letter-spacing: -1.5px;
+	font-family: 'Title';
+}
+
+input.chart-num {
+	margin-left: 2px;
+	font-size: 40px;
+	width: 60px;
+	text-align: center;
+	font-family: 'Title';
+	font-weight: bold;
+}
+
+.submit {
+	background-color: #4c8baf;
+	color: white;
+	padding: 10px 40px;
+	border-radius: 20px;
+	font-size: 18px;
+	margin: 10px 0;
+	border: none;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+
+.submit:hover {
+	background-color: #3e7aa3;
+}
+
+.submit:active {
+	transform: scale(0.95);
+}
+
+.charts {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 50px;
+	animation: ChartAppearance ease 300ms forwards;
+}
+
+.charts>div, .charts>a {
+	display: flex;
+	align-items: center;
+	width: 50%;
+	justify-content: space-between;
+	padding: 10px 20px;
+}
+.head {
+	font-size: 14px;
+}
+.charts>a:hover {
+	cursor: pointer;
+	background-color: rgba(255, 255, 255, .1);
+}
